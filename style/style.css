@@ -1,0 +1,597 @@
+/*
+Color Pattern 
+#06283D
+#256D85
+#47B5FF
+
+*/
+
+
+@font-face {
+    font-family: 'Roboto-medium';
+    src: url(../assets/fonts/ROBOTO/Roboto-Medium.ttf);
+}
+
+
+/* CLEARING */
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto-medium';
+}
+
+
+/* NAVBAR AWAL */
+header{
+    width: 100%;
+    align-items: center;
+    
+}
+
+nav{
+    width: 100%;
+    background-color: #06283D;
+    height: 8em;
+    margin-top: 0;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: white;
+    padding: 5px;
+    border-radius: 10px;
+}
+nav ul li.logo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+nav ul li.logo .REshop{
+    font-size: 20px; 
+    margin-left: 0;
+    
+}
+
+nav ul.navbar li a:hover{
+    background-color: #256D85;
+    text-decoration: none;
+}
+
+nav ul{
+    padding-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    list-style: none;
+}
+
+.searchInput{
+    width: 20rem;
+    height: 20px;
+    padding: 2px;
+    border-radius: 10px;
+}
+
+.searchLogo{
+    border-radius: 100%;
+    padding: 5px;
+    border: 0;
+}
+
+.userImg{
+    background-color: white;
+    border-radius: 100%;
+}
+
+/* NAVBAR AKHIR */
+
+
+
+
+/* PROMO */
+.jumbotron {
+    display: flex;
+    justify-content: center;
+}
+
+.jumbotron img{
+    width: 100%;
+    max-width: 800px;
+    height: auto;
+    margin: 20px 0;
+}
+
+
+/* MAIN CONTENT AWAL */
+.container {
+    display: flex;
+}
+main h2{
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+    /* CARD AWAL */
+.content{
+    float: left;
+    margin-left: 150px;
+    width: auto;
+    justify-content: space-between;
+}
+
+.cardCollection {
+    display: flex;
+    margin-right: 0;
+    margin-top: 20px;
+
+}
+
+.clear{
+    clear: both;
+}
+
+.card {
+    padding-bottom: 10px;
+    margin-right: 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.356);
+    transition: 0.3s;
+}
+
+.noMargin{
+    margin: 0;
+}
+
+.buttonCard {
+    padding: 5px;
+    border-radius: 5px;
+    border: 0;
+    background-color: #47B5FF;
+    transition: 0.2s;
+}
+
+.buttonCard:hover {
+    color: white;
+    background-color: #256D85;
+
+}
+
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.63);
+}
+
+.productImg {
+    width: 100%;
+    height: auto;
+
+    margin: 10px;
+    border-radius: 20px;
+}
+    /* CARD AKHIR */
+
+
+
+    /* ASIDE AWAL */
+aside{
+    float: right;
+    width: 25%;
+    
+}
+aside .card {
+
+    border-radius: 0;
+    margin-right: 100px;
+    text-align: center;
+
+}
+
+aside img{
+    width: 20%;
+}
+
+aside .card h4.creator{
+    margin-top: 10px;
+}
+aside .card{
+    border-radius: 40px;
+}
+aside .card p.description{
+    margin: 10px 0;
+}
+aside .card p.description strong{
+    font-size: larger;
+}
+    /* ASIDE AKHIR */
+
+/* MAIN CONTENT AKHIR */
+
+
+/* SECTION ABOUT AWAL */
+
+.about{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: 100px 0;
+}
+
+.about p{
+    width: 70%;
+    font-size: large;
+    font-weight: bold;
+    line-height: 30px;
+}
+
+.about h2{
+    color: #47B5FF;
+}
+/* SECTION ABOUT AKHIR */
+
+/* SECTION FORM AWAL*/
+
+.form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 80px;
+}
+
+
+.form div form{
+    display: flex;
+    width: 70%;
+    flex-direction: column;
+    text-align: center;
+}
+
+.form div form input {
+    text-align: center;
+}
+.form .card {
+    width: 60%;
+}
+
+form 
+
+
+.noMargin {
+    width: 50%;
+}
+
+
+/* SECTION FORM AKHIR */
+
+
+/* FOOTER AWAL */
+footer {
+    color: white;
+    line-height: 2em;
+    background-color:#06283D ;
+    text-align: center;
+    height: 2em;
+}
+/* FOOTER AKHIR */
+
+
+/* DETAIL PRODUCT AWAL */
+
+.background{
+    background-color: rgba(0, 0, 0, 0.452);
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    display: flex;
+    
+    align-items: center;
+    justify-content: center;
+}
+.exitIcon{
+    max-width: 20px;
+}
+
+
+.displayDetail .column-two .card{
+    width: 30%;
+    margin: 0 0 10px;
+}
+
+.column-one {
+    display: flex;
+    justify-content: end;
+    
+}
+
+.displayDetail {
+    border-radius: 20px;
+    background-color: white;
+    width: 50%;
+    height: 90%;
+    padding: 10px;
+    flex-direction: column;
+    display: flex;    
+}
+
+.column-two{
+    display: flex;
+    text-align: center;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.column-three{
+    margin-top: 50px;
+    height: 20%;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.counterDisplay{
+    text-align: center;
+    border-radius: 5px;
+    line-height: 3em;
+    width: 3em;
+    height: 3em;
+    border: #06283D 1px solid;
+    margin: 0 30px;
+}
+
+.counterBut {
+    border-radius: 5px;
+    padding: 0;
+    font-size: 20px;
+    width: 2em;
+    height: 2em;
+}
+
+.minBut{
+    background-color: rgb(255, 70, 70);
+}
+
+.plusBut {
+    background-color: rgb(54, 255, 47);
+
+}
+
+.confirmBut{
+    background-color: #47B5FF;
+    padding: 5px;
+    border-radius: 10px;
+    transition: 0.2s;
+}
+
+.confirmBut:hover{
+    background-color: #3bff45;
+    padding: 7px;
+    border-radius: 10px;
+}
+
+
+.counter {
+    display: flex;
+    justify-items: center;
+    margin: 10px 0;
+    align-items: center;
+    flex-direction: row;
+}
+
+.total{
+    text-align: center;
+}
+
+.nonActive{
+    display: none;
+}
+/* DETAIL PRODUCT AKHIR */
+
+
+/* FORM AWAL */
+form input{
+    margin: 10px;
+    border: 0px;
+    border-bottom: #06283D 1px solid;
+}
+
+textarea{
+    padding: 5px;
+    border-radius: 10px;
+}
+
+input:focus-visible {
+    border: 0px;
+}
+
+
+
+
+@media screen and (max-width: 1319px) {
+  #content {
+    padding: 0;
+  }
+.content{ 
+    margin-left: 260px;
+}
+aside{
+    margin: 20px 180px 20px 0 ;
+    width: 30%;
+}
+.card {
+    text-align: center;
+    font-size: small;
+}
+.productImg {
+    width: 80%;
+    height: auto;
+
+    margin: 10px;
+    border-radius: 20px;
+}
+.displayDetail{
+    height: fit-content;
+}
+.form .card {
+    width: 80%;
+}
+}
+
+
+
+@media screen and (max-width: 1080px) {
+  #content {
+    padding: 0;
+  }
+.searchInput{
+    width: 300px;
+    height: 20px;
+    padding: 2px;
+    border-radius: 10px;
+}
+.content{
+    float: left;
+    margin-left: 90px;
+    justify-content: space-between;
+
+}
+aside{
+    margin: 20px 180px 20px 0 ;
+    width: 50%;
+}
+.card {
+    text-align: center;
+    font-size: small;
+}
+.productImg {
+    width: 80%;
+    height: auto;
+
+    margin: 10px;
+    border-radius: 20px;
+}
+.displayDetail{
+    height: fit-content;
+}
+.form .card {
+    width: 80%;
+}
+
+}
+
+
+
+@media screen and (max-width: 800px) {
+  #content {
+    padding: 0;
+  }
+
+  .searchInput{
+    width: 200px;
+    height: 20px;
+    padding: 2px;
+    border-radius: 10px;
+}
+.content{
+    float: left;
+    margin-left: 30px;
+    justify-content: space-between;
+
+}
+aside{
+    margin: 20px 160px 20px 0 ;
+    width: 40%;
+}
+.card {
+    text-align: center;
+    font-size: small;
+}
+.productImg {
+    width: 80%;
+    height: auto;
+
+    margin: 10px;
+    border-radius: 20px;
+}
+.displayDetail{
+    height: fit-content;
+}
+
+}
+
+
+
+@media screen and (max-width: 500px) {
+  #content {
+    padding: 0;
+  }
+
+  .searchInput{
+    width: 200px;
+    height: 20px;
+    padding: 2px;
+    border-radius: 10px;
+}
+.content{
+    float: left;
+
+
+    margin-left: 15px;
+
+    justify-content: space-between;
+
+}
+aside{
+    margin: 20px 100px 20px 0 ;
+    width: 50%;
+}
+.card {
+    text-align: center;
+    font-size: small;
+}
+
+.displayDetail{
+    height: fit-content;
+}
+}
+
+
+
+@media screen and (max-width: 300px) {
+  #content {
+    padding: 0;
+  }
+
+  .searchInput{
+    width: 100px;
+    height: 20px;
+    padding: 2px;
+    border-radius: 10px;
+}
+.content{
+    float: left;
+
+
+    margin-left: 15px;
+
+    justify-content: space-between;
+
+}
+aside{
+    margin: 20px 50px 20px 0 ;
+    width: 50%;
+}
+.card {
+    text-align: center;
+    font-size: small;
+}
+}

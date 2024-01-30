@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/style.css">
+    <title>Ray Shop</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li class="logo"><a href="#"><img src="assets/logoRay2.png" alt="Logo" width="50px"></a><a href="#" class="REshop">Eshop</a></li>
+                <li>
+                    <form action="">
+                        <input type="text" width="100px" class="searchInput">
+                        <button class="searchLogo"><img src="assets/search.png" alt="" width="15px"></button>
+                    </form>
+                </li>
+                <!-- <li><a href="#"><img src="assets/search.png" alt="search"></a></li> -->
+                <li><a href="#"><img src="assets/user.png" alt="user" width="30px" class="userImg"></a> </li>
+            </ul>
+            <ul class="navbar">
+                <li><a href="#product">Product</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="jumbotron">
+            <img class="promoImg" src="assets/promo/cuciGudang.png" alt="">
+        </div>
+
+        <!-- CONTENT FLOAT KIRI -->
+        <h2 id="product">MY PRODUCT</h2>
+        <div id="content" class="content">
+
+            <div class="cardCollection">
+                <article class="card">
+                    <img class="productImg" src="assets/product/parfumJayrose.jpg" alt="" srcset="">
+                    <h4 class="productName"> Jayrosse</h4>
+                    <h4 class="price">Rp. 30.000</h4>
+                    <button class="buttonCard" onclick="activeJayrosse()">BUY</button>
+                </article>
+                <article class="card">
+                    <img class="productImg" src="assets/product/parfum2.jpg" alt="" srcset="">
+                    <h4 class="productName"> Gatsby</h4>
+                    <h4 class="price">Rp. 40.000</h4>
+                    <button class="buttonCard" onclick="activeGatsby()">BUY</button>
+                </article>
+                <article class="card">
+                    <img class="productImg" src="assets/product/parfum3.jpg" alt="" srcset="">
+                    <h4 class="productName"> Sauvage</h4>
+                    <h4 class="price">Rp. 35.000</h4>
+                    <button class="buttonCard " onclick="activeSauvage()">BUY</button>
+                </article>
+
+            </div>
+            <div class="cardCollection">
+                <article class="card">
+                    <img class="productImg" src="assets/product/parfum4.jpg" alt="" srcset="">
+                    <h4 class="productName"> Perfume Axe Golden</h4>
+                    <h4 class="price">Rp.50.000</h4>
+                    <button class="buttonCard" onclick="activeAxeGolden();">BUY</button>
+                </article>
+                <article class="card">
+                    <img class="productImg" src="assets/product/rexona2.jpg" alt="" srcset="">
+                    <h4 class="productName"> Rexona Cotton Dry</h4>
+                    <h4 class="price">Rp. 45.000</h4>
+                    <button class="buttonCard" onclick="activeRexonaCotton()">BUY</button>
+                </article>
+                <article class="card">
+                    <img class="productImg" src="assets/product/rexonna.jpg" alt="" srcset="">
+                    <h4 class="productName"> Rexona Lime</h4>
+                    <h4 class="price">Rp. 45.000</h4>
+                    <button class="buttonCard" onclick="activeRexonaLime()">BUY</button>
+                </article>
+
+            </div>
+        </div>
+        <aside>
+            <article class="card">
+                <h4 class="creator"> CREATOR</h4>
+                <img class="productImg" src="assets/Rayedison2.png" alt="" srcset="">
+                <h4 class="nama">Ray Edison <br> Salvator Sihombing</h4>
+                <p class="description">Saya seorang pelajar yang sedang mengikuti pembelajaran Pembuatan Website, dan Ini Website E-commerce saya <strong> REshop</strong> <br> Atau <br> <strong> RayEdison Shop </strong> </p>
+                <a href="https://www.youtube.com/channel/UCMnJUhTH2IhQIdIHTeSdAFA"><img src="assets/yutub.png" alt=""></a>
+            </article>
+        </aside>
+
+        <!-- ASIDE FLOAT KANAN -->
+
+
+        <div class="clear"></div>
+        <!-- ABOUT AWAL -->
+        <section class="about">
+            <h2 class="aboutMyProduct" id="about">
+                About My Product
+            </h2>
+            <br>
+            <p>
+                Perfume has many benefits, especially in terms of aromatherapy, releasing stress, and providing a relaxing effect. Many certain fragrances are commonly used for body health, especially to relieve stress. Perfume, in addition
+                to
+                increasing
+                self-confidence, can also strengthen memory and cause feelings of happiness.
+            </p>
+            <br>
+            <h2>
+                Need me to be a brand ambasador for your product?<br> CONTACT ME!
+            </h2>
+        </section>
+        <!-- ABOUT AKHIR -->
+
+        <!-- FORM AWAL -->
+        <section class="form" id="contact">
+            <div class="card noMargin">
+                <br>
+                <h2>Message</h2>
+                <br>
+
+                <form action="#">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" placeholder="Name">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" placeholder="Your Email">
+                    <label for="message">Message</label>
+                    <textarea name="message" id="message" cols="30" rows="10"></textarea>
+                    <br>
+                    <a href="#"><Button class="buttonCard">Send</Button></a>
+                </form>
+            </div>
+        </section>
+        <br>
+
+        <!-- Detail Product AXE GOLDEN -->
+        <div class="background nonActive" id="displayAxeGolden">
+            <div class="displayDetail">
+                <div class="column-one">
+                    <button onclick="exitIconFun()">
+                        <img src="assets/cross.png" alt="Exit" class="exitIcon">
+                    </button>
+                </div>
+                <div class="column-two">
+                    <div class="card">
+                        <img class="productImg" src="assets/product/parfum4.jpg" alt="" srcset="">
+                        <h4 class="productName"> Action Figure</h4>
+                        <h4 class="priceAxe" id="priceAxe">50.000</h4>
+                    </div>
+                    <h4>Detail</h4>
+                    <p>
+                        Kondisi: Baru <br>
+                        Berat Satuan: 1 g <br>
+                        Kategori: Parfum Pria <br>
+                    </p>
+                </div>
+
+                <div class="column-three">
+                    <h4>AXE GOLDEN PERFUME</h4>
+
+                    <div class="counter">
+                        <button id="minButton1" class="minBut counterBut">-</button>
+                        <h5 id="counterDisplay1" class="counterDisplay">0</h5>
+                        <button id="plusButton1" class="plusBut counterBut">+</button>
+                    </div>
+                    <div class="total">
+                        <h4>Total</h4>
+                        <h3 id="totalPrice1">0</h3>
+                    </div>
+                    <br>
+                    <div class="confirm">
+                        <button class="confirmBut">CONFIRM</button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- JAYROSSE -->
+        <div class="background nonActive" id="displayJayrosse">
+            <div class="displayDetail">
+                <div class="column-one">
+                    <button onclick="exitIconFun()">
+                        <img src="assets/cross.png" alt="Exit" class="exitIcon">
+                    </button>
+                </div>
+                <div class="column-two">
+                    <div class="card">
+                        <img class="productImg" src="assets/product/parfumJayrose.jpg" alt="" srcset="">
+                        <h4 class="productName"> Jayrosse</h4>
+                        <h4 class="priceJayrosse" id="priceJayrosse">30.000</h4>
+                    </div>
+                    <h4>Detail</h4>
+                    <p>
+                        Kondisi: Baru <br>
+                        Berat Satuan: 1 g <br>
+                        Kategori: Parfum Pria <br>
+                    </p>
+                </div>
+
+                <div class="column-three">
+                    <h4>PERFUME JAYROSSE</h4>
+
+                    <div class="counter">
+                        <button id="minButton2" class="minBut counterBut">-</button>
+                        <h5 id="counterDisplay2" class="counterDisplay">0</h5>
+                        <button id="plusButton2" class="plusBut counterBut">+</button>
+                    </div>
+                    <div class="total">
+                        <h4>Total</h4>
+                        <h3 id="totalPrice2">0</h3>
+                    </div>
+                    <br>
+                    <div class="confirm">
+                        <button class="confirmBut">CONFIRM</button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- GATSBY -->
+        <div class="background nonActive" id="displayGatsby">
+            <div class="displayDetail">
+                <div class="column-one">
+                    <button onclick="exitIconFun()">
+                        <img src="assets/cross.png" alt="Exit" class="exitIcon">
+                    </button>
+                </div>
+                <div class="column-two">
+                    <div class="card">
+                        <img class="productImg" src="assets/product/parfum2.jpg" alt="" srcset="">
+                        <h4 class="productName"> Gatsby</h4>
+                        <h4 class="priceGatsby" id="priceGatsby">40.000</h4>
+                    </div>
+                    <h4>Detail</h4>
+                    <p>
+                        Kondisi: Baru <br>
+                        Berat Satuan: 1 g <br>
+                        Kategori: Parfum Pria <br>
+                    </p>
+                </div>
+
+                <div class="column-three">
+                    <h4>PERFUME GATSBY</h4>
+
+                    <div class="counter">
+                        <button id="minButton3" class="minBut counterBut">-</button>
+                        <h5 id="counterDisplay3" class="counterDisplay">0</h5>
+                        <button id="plusButton3" class="plusBut counterBut">+</button>
+                    </div>
+                    <div class="total">
+                        <h4>Total</h4>
+                        <h3 id="totalPrice3">0</h3>
+                    </div>
+                    <br>
+                    <div class="confirm">
+                        <button class="confirmBut">CONFIRM</button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- SAUVAGE -->
+        <div class="background nonActive" id="displaySauvage">
+            <div class="displayDetail">
+                <div class="column-one">
+                    <button onclick="exitIconFun()">
+                        <img src="assets/cross.png" alt="Exit" class="exitIcon">
+                    </button>
+                </div>
+                <div class="column-two">
+                    <div class="card">
+                        <img class="productImg" src="assets/product/parfum3.jpg" alt="" srcset="">
+                        <h4 class="productName"> Sauvage</h4>
+                        <h4 class="priceSauvage" id="priceSauvage">35.000</h4>
+                    </div>
+                    <h4>Detail</h4>
+                    <p>
+                        Kondisi: Baru <br>
+                        Berat Satuan: 1 g <br>
+                        Kategori: Parfum Pria <br>
+                    </p>
+                </div>
+
+                <div class="column-three">
+                    <h4>PERFUME SAUVAGE</h4>
+
+                    <div class="counter">
+                        <button id="minButton4" class="minBut counterBut">-</button>
+                        <h5 id="counterDisplay4" class="counterDisplay">0</h5>
+                        <button id="plusButton4" class="plusBut counterBut">+</button>
+                    </div>
+                    <div class="total">
+                        <h4>Total</h4>
+                        <h3 id="totalPrice4">0</h3>
+                    </div>
+                    <br>
+                    <div class="confirm">
+                        <button class="confirmBut">CONFIRM</button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- REXONA COTTON -->
+        <div class="background nonActive" id="displayRexonaCotton">
+            <div class="displayDetail">
+                <div class="column-one">
+                    <button onclick="exitIconFun()">
+                        <img src="assets/cross.png" alt="Exit" class="exitIcon">
+                    </button>
+                </div>
+                <div class="column-two">
+                    <div class="card">
+                        <img class="productImg" src="assets/product/rexona2.jpg" alt="" srcset="">
+                        <h4 class="productName"> Rexona Cotton Dry</h4>
+                        <h4 class="priceRexona" id="priceRexonaCotton">45.000</h4>
+                    </div>
+                    <h4>Detail</h4>
+                    <p>
+                        Kondisi: Baru <br>
+                        Berat Satuan: 1 g <br>
+                        Kategori: Deodorant Perempuan <br>
+                    </p>
+                </div>
+
+                <div class="column-three">
+                    <h4>REXONA COTTON DRY</h4>
+
+                    <div class="counter">
+                        <button id="minButton5" class="minBut counterBut">-</button>
+                        <h5 id="counterDisplay5" class="counterDisplay">0</h5>
+                        <button id="plusButton5" class="plusBut counterBut">+</button>
+                    </div>
+                    <div class="total">
+                        <h4>Total</h4>
+                        <h3 id="totalPrice5">0</h3>
+                    </div>
+                    <br>
+                    <div class="confirm">
+                        <button class="confirmBut">CONFIRM</button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- REXONA LIME -->
+        <div class="background nonActive" id="displayRexonaLime">
+            <div class="displayDetail">
+                <div class="column-one">
+                    <button onclick="exitIconFun()">
+                        <img src="assets/cross.png" alt="Exit" class="exitIcon">
+                    </button>
+                </div>
+                <div class="column-two">
+                    <div class="card">
+                        <img class="productImg" src="assets/product/rexonna.jpg" alt="" srcset="">
+                        <h4 class="productName"> Rexona</h4>
+                        <h4 class="priceRexona" id="priceRexonaLime">45.000</h4>
+                    </div>
+                    <h4>Detail</h4>
+                    <p>
+                        Kondisi: Baru <br>
+                        Berat Satuan: 1 g <br>
+                        Kategori: Deodorant Perempuan <br>
+                    </p>
+                </div>
+
+                <div class="column-three">
+                    <h4>REXONA LIME</h4>
+
+                    <div class="counter">
+                        <button id="minButton6" class="minBut counterBut">-</button>
+                        <h5 id="counterDisplay6" class="counterDisplay">0</h5>
+                        <button id="plusButton6" class="plusBut counterBut">+</button>
+                    </div>
+                    <div class="total">
+                        <h4>Total</h4>
+                        <h3 id="totalPrice6">0</h3>
+                    </div>
+                    <br>
+                    <div class="confirm">
+                        <button class="confirmBut">CONFIRM</button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </main>
+    <!-- FORM AKHIR -->
+    <footer>
+        <h5>Copyright &copy; Made by Ray Edison Salvator Sihombing</h5>
+    </footer>
+
+
+
+
+
+
+
+
+
+
+    <script src="style/script.js"></script>
+</body>
+
+</html>
